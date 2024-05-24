@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	/* font-size: 10px; */
+	/* Percentage is user's browser default font-size setting */
+	/* 10 / 16 = 0.625 */
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: "Rubik", sans-serif;
+	line-height: 1.1;
+	font-weight: 400;
+	font-size: 1.8rem;
+	color: #555;
+	overflow-x: hidden;
+	backface-visibility: hidden;
+}
+
+strong {
+	font-weight: 500;
+}
+
+.icon {
+	color: #e67e22;
+	display: inline-block;
+}
+
+.container {
+	max-width: 120rem;
+	padding: 0 3.2rem;
+	margin: 0 auto;
+}
+
+.logo-link {
+	display: block;
+}
+
+.logo-img {
+	height: 2.2rem;
+	width: auto;
+}
+
+/* ===== HEADINGS ===== */
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+	color: #333;
+	font-weight: 700;
+	letter-spacing: -0.5px;
+}
+
+.heading-primary {
+	font-size: 5.2rem;
+	font-size: 4.8rem;
+	line-height: 1.05;
+	margin-bottom: 3.2rem;
+	/* word-spacing: 1px; */
+}
+
+.heading-secondary {
+	font-size: 4.4rem;
+	line-height: 1.2;
+	margin-bottom: 9.6rem;
+}
+
+.subheading {
+	display: block;
+	font-weight: 500;
+	color: #cf711f;
+	text-transform: uppercase;
+	margin-bottom: 1.6rem;
+	letter-spacing: 0.75px;
+}
+
+.heading-tertiary {
+	font-size: 3rem;
+	line-height: 1.2;
+	margin-bottom: 3.2rem;
+}
+
+/* ===== BUTTONS ===== */
+
+.btn,
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	font-weight: 600;
+	padding: 1.6rem 3.2rem;
+	border-radius: 9px;
+	text-decoration: none;
+
+	transition: all 0.3s;
+
+	/* This is neccesary for the btn in CTA form section */
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.btn-full:link,
+.btn-full:visited {
+	background-color: #e67e22;
+	color: #fff;
+	/* font-family: serif; */
+}
+
+.btn-full:hover,
+.btn-full:active {
+	background-color: #cf711f;
+	color: #fff;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+	background-color: #fff;
+	color: #555;
+}
+
+.btn-outline:hover {
+	background-color: #fdf2e9;
+	box-shadow: inset 0 0 0 3px #fff;
+}
+
+/* ===== GRIDS ===== */
+
+.grid {
+	display: grid;
+	column-gap: 6.4rem;
+	row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+/* ======DIETS & PRICING-PLAN LIST===== */
+.list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+
+.list-item {
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+}
+
+.list-icon {
+	width: 3rem;
+	height: 3rem;
+}
+
+/* =====MARGINS AND PADDINGS */
+.margin-right-sm {
+	margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+	margin-bottom: 4.8rem !important;
+}
+
+.margin-bottom-lg {
+	margin-bottom: 9.6rem !important;
+}
